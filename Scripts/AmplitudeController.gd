@@ -15,3 +15,4 @@ func _on_HSlider_value_changed(value: float) -> void:
 func set_amplitude(value: float) -> void:
 	amplitude = value
 	$Label.text = label_start_text + " " + str(amplitude)
+	emit_signal("amplitude_changed", value)
