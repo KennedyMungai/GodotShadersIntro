@@ -11,4 +11,5 @@ func _ready() -> void:
 
 func _on_AmplitudeController_amplitude_changed(value) -> void:
 	amplitude.x = value
-	material.set_shader_param("amplitude", amplitude)	
+	material.set_shader_param("amplitude", amplitude)
+	print(amplitude)	
