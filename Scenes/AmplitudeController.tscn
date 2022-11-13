@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Scripts/AmplitudeController.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/slider.gd" type="Script" id=2]
 
 [node name="AmplitudeController" type="VBoxContainer"]
 margin_right = 114.0
@@ -23,5 +24,6 @@ min_value = 5.0
 max_value = 50.0
 step = 5.0
 value = 5.0
+script = ExtResource( 2 )
 
 [connection signal="value_changed" from="HSlider" to="." method="_on_HSlider_value_changed"]
