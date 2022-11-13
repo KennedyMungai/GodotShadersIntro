@@ -23,3 +23,5 @@ min_value = 5.0
 max_value = 50.0
 step = 5.0
 value = 5.0
+
+[connection signal="value_changed" from="HSlider" to="." method="_on_HSlider_value_changed"]
