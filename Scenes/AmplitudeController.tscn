@@ -16,3 +16,6 @@ autowrap = true
 margin_top = 18.0
 margin_right = 114.0
 margin_bottom = 34.0
+min_value = 5.0
+max_value = 50.0
+value = 5.0
