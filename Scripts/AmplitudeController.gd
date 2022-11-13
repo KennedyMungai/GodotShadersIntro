@@ -9,7 +9,7 @@ onready var label_start_text: String = $Label.text
 
 
 func _on_HSlider_value_changed(value: float) -> void:
-	pass # Replace with function body.
+	self.amplitude = value
 
 
 func set_amplitude(value: float) -> void:
