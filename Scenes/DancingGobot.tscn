@@ -23,3 +23,5 @@ margin_left = -2.0
 margin_top = 93.0
 margin_right = 112.0
 margin_bottom = 133.0
+
+[connection signal="amplitude_changed" from="AmplitudeController" to="." method="_on_AmplitudeController_amplitude_changed"]
