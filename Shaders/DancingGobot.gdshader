@@ -7,6 +7,6 @@ uniform vec2 amplitude = vec2(10.0, 5.0);
 
 void vertex() 
 {
-//	VERTEX.y += cos(TIME + VERTEX.y + VERTEX.x) * 20.0;
-//	VERTEX.x += sin(TIME + VERTEX.x + VERTEX.y) * 20.0;
+	VERTEX.y += cos(TIME + VERTEX.y + VERTEX.x) * 20.0;
+	VERTEX.x += sin(TIME + VERTEX.x + VERTEX.y) * 20.0;
 }
