@@ -1,6 +1,7 @@
 extends VBoxContainer
 
 
+var amplitude: float = 10.0 setget set_amplitude 
 
 
 func _on_HSlider_value_changed(value: float) -> void:
