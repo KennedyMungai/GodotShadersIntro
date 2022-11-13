@@ -1,0 +1,18 @@
+[gd_scene format=2]
+
+[node name="AmplitudeController" type="VBoxContainer"]
+margin_right = 114.0
+margin_bottom = 40.0
+
+[node name="Label" type="Label" parent="."]
+margin_right = 114.0
+margin_bottom = 14.0
+text = "X Amplitude"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="HSlider" type="HSlider" parent="."]
+margin_top = 18.0
+margin_right = 114.0
+margin_bottom = 34.0
