@@ -2,6 +2,7 @@ shader_type canvas_item;
 
 
 uniform float time_factor = 1.0;
+uniform vec2 amplitude = vec2(10.0, 5.0);
 
 
 void vertex() 
