@@ -1,6 +1,9 @@
 extends VBoxContainer
 
 
+signal amplitude_changed(amplitude)
+
+
 var amplitude: float = 10.0 setget set_amplitude
 onready var label_start_text: String = $Label.text
 
