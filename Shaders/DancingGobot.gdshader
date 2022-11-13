@@ -3,5 +3,5 @@ shader_type canvas_item;
 
 void vertex() 
 {
-	VERTEX += cos(TIME) * vec2(0.0, 20.0);
+	VERTEX.y += cos(TIME) * 20.0;
 }
