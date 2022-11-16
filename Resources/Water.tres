@@ -5,7 +5,8 @@ code = "shader_type canvas_item;
 
 void fragment()
 {
-	COLOR = vec4(UV,0.0,1.0);
+	vec2 tiled_uvs = UV * tiled_factor;
+//	COLOR = vec4(UV,0.0,1.0);
 }"
 
 [resource]
