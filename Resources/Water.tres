@@ -13,11 +13,11 @@ void fragment()
 	tiled_uvs.y *= aspect_ratio;
 	
 	vec2 waves_uv_offset;
-	waves_uv_offset.x = cos(TIME + tiled_uvs.x + tiled_uvs.y) * 0.05;
-	waves_uv_offset.y = sin(TIME + tiled_uvs.x + tiled_uvs.y) * 0.05;
+	waves_uv_offset.x = cos(TIME + tiled_uvs.x + tiled_uvs.y);
+	waves_uv_offset.y = sin(TIME + tiled_uvs.x + tiled_uvs.y);
 	
 //	COLOR = vec4(tiled_uvs,0.0,1.0);
-	COLOR = texture(TEXTURE, tiled_uvs + waves_uv_offset);
+	COLOR = texture(TEXTURE, tiled_uvs + waves_uv_offset * 0.1);
 }"
 
 [resource]
