@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Textures/water_diffuse.png" type="Texture" id=1]
+
+[node name="Water" type="Sprite"]
+texture = ExtResource( 1 )
