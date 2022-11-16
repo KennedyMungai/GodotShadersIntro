@@ -8,3 +8,5 @@
 material = ExtResource( 2 )
 texture = ExtResource( 1 )
 script = ExtResource( 3 )
+
+[connection signal="item_rect_changed" from="." to="." method="calculate_aspect_ratio"]
