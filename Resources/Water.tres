@@ -17,7 +17,7 @@ void fragment()
 	waves_uv_offset.y = sin(TIME) * 0.05;
 	
 //	COLOR = vec4(tiled_uvs,0.0,1.0);
-	COLOR = texture(TEXTURE, tiled_uvs);
+	COLOR = texture(TEXTURE, tiled_uvs + waves_uv_offset);
 }"
 
 [resource]
