@@ -10,7 +10,7 @@ uniform sampler2D uv_offset_texture : hint_black;
 void fragment() {
 	vec2 offset_texture_uvs = UV * uv_offset_size;
 	
-	vec2 texture_based_offset = vec2(0.0);
+	vec2 texture_based_offset = texture(uv_offset_texture, offset_texture_uvs).rg;
 	
 	vec2 adjusted_uv = UV * tile_factor;
 	adjusted_uv.y *= aspect_ratio;
