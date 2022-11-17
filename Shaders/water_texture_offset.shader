@@ -6,7 +6,7 @@ uniform float aspect_ratio = 0.5;
 uniform vec2 uv_offset_size = vec2(1.0, 1.0);
 uniform vec2 waves_size = vec2(0.1, 0.1);
 
-uniform float time_scale = 0.4;
+uniform float time_scale = 0.05;
 
 uniform sampler2D uv_offset_texture : hint_black;
 
