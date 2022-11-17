@@ -3,6 +3,8 @@ shader_type canvas_item;
 uniform float tile_factor = 10.0;
 uniform float aspect_ratio = 0.5;
 
+uniform vec2 uv_offset_scale = vec2(1.0, 1.0);
+
 uniform sampler2D uv_offset_texture : hint_black;
 
 void fragment() {
