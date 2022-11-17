@@ -16,5 +16,5 @@ void fragment() {
 	adjusted_uv.y *= aspect_ratio;
 	
 	COLOR = texture(TEXTURE, adjusted_uv + texture_based_offset);
-	COLOR = texture(uv_offset_texture, offset_texture_uvs);
+	COLOR = vec4(texture_based_offset, vec2(0.0, 1.0));
 }
