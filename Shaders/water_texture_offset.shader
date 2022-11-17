@@ -17,6 +17,6 @@ void fragment() {
 	vec2 adjusted_uv = UV * tile_factor;
 	adjusted_uv.y *= aspect_ratio;
 	
-	COLOR = texture(TEXTURE, adjusted_uv + texture_based_offset);
-	COLOR = vec4(texture_based_offset, vec2(0.0, 1.0));
+	COLOR = texture(TEXTURE, adjusted_uv + texture_based_offset * waves_size);
+//	COLOR = vec4(texture_based_offset, vec2(0.0, 1.0));
 }
